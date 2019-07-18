@@ -1,0 +1,33 @@
+@media print{
+    @page {
+      size: A4;
+      margin: 0mm;
+    }
+}
+
+*{margin:0;padding:0}
+html, body {width: 210mm;height: 297mm;font-family:"Trebuchet MS",arial;font-size:15px}
+.clear{clear:both}
+.hr{width:100%;height:1px;border-bottom:solid 1px #DDD;margin: 5px 0;}
+div.little{font-size:14px}
+
+div#content{width:210mm;height:297mm;float:left;box-sizing:border-box;-mozbox-sizing:border-box;-webkit-box-sizing:border-box;padding:5mm}
+div.header{width:100%;height:20mm;margin-bottom:2mm;float:left;text-align:center}
+    div.logo{float:none;display:inline-block}
+        div.logo img{max-height:20mm}
+
+div.customer{width:100%;height:auto;float:left;font-size:13px}
+div.customer div.left{width:25mm;height:6mm;line-height:6mm;float:left}
+div.customer div.right{width:170mm;height:6mm;line-height:6mm;float:left}
+div.customer div.right:before{content:': '}
+
+div.products{width:width:100%;height:auto;float:left;margin-top:4mm}
+div.product{width:100%;height:auto;float:left;font-size:13px;margin-top:2mm}
+div.product div.name{width:135mm;height:auto;line-height:4mm;float:left;font-size:13px;text-overflow: ellipsis;}
+div.product div.piece{width:20mm;height:auto;line-height:4mm;float:left;font-size:13px;text-align:center}
+div.product div.isbn{width:24mm;height:auto;line-height:4mm;float:left;font-size:13px;text-align:center}
+div.product div.price{width:20mm;height:auto;line-height:4mm;float:left;font-size:13px;text-align:center}
+
+div.total{width:20mm;text-align:center;height:auto;float:left;margin-top:2mm;text-align:right;font-size:14px}
+
+div.footer{width:100%;height:auto;float:left;text-align:center;margin-top:2mm}
